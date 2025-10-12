@@ -1,0 +1,226 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: linear-gradient(to right, #6a0dad, #ffd700); /* Purple to Gold */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(106, 13, 173, 0.85); /* Purple header */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  nav a {
+    color: #ffd700; /* Gold links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a.active,
+  nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Highlights Cards */
+  .highlights {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .card {
+    background-color: rgba(255, 215, 0, 0.3); /* Gold cards */
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .card i {
+    margin-bottom: 10px;
+    color: #6a0dad; /* Purple icons */
+  }
+  
+  /* Resume Timeline */
+  .timeline {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  .resume-section {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Skill Bars */
+  .skill {
+    margin-bottom: 15px;
+  }
+  .skill p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .bar {
+    background: #ffd700; /* Gold background */
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .progress {
+    background: #6a0dad; /* Purple progress */
+    height: 10px;
+    border-radius: 5px;
+    width: 0;
+    animation: grow 2s forwards;
+  }
+  @keyframes grow {
+    to {
+      width: 80%;
+    }
+  }
+  
+  /* Bio Section */
+  .bio {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .bio ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .bio li {
+    margin-bottom: 10px;
+  }
+  .bio button.collapsible {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .bio button.collapsible.active,
+  .bio button.collapsible:hover {
+    background-color: #4b0072; /* Darker Purple */
+  }
+  .bio .content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: rgba(106, 13, 173, 0.3); /* Purple header cells */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(106, 13, 173, 0.85);
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background-color: rgba(106, 13, 173, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Social Icons */
+  .social-icons a {
+    margin-right: 10px;
+    color: #6a0dad;
+    font-size: 24px;
+    transition: transform 0.2s;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .highlights {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

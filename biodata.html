@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bio-Data - Khushi Bhomkar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bio-Data</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="biodata.html" class="active">Bio-Data</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Personal Information -->
+    <section class="bio">
+      <img src="Khushi.jpg" alt="Khushi Bhomkar" class="profile-img">
+      <h2>Personal Information</h2>
+      <table>
+        <tr><th>Name</th><td>Khushi Bhomkar</td></tr>
+        <tr><th>Date of Birth</th><td>01 Mar 2005</td></tr>
+        <tr><th>Gender</th><td>Female</td></tr>
+        <tr><th>Nationality</th><td>Indian</td></tr>
+        <tr><th>Address</th><td>Mangaluru, India</td></tr>
+        <tr><th>Contact</th><td>+91 7892084212</td></tr>
+        <tr><th>Email</th><td>ganabhomkar@gmail.com</td></tr>
+      </table>
+    </section>
+
+    <!-- Hobbies & Interests -->
+    <section class="bio">
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>Web development</li>
+        <li>Singing</li>
+        <li>Sketching</li>
+        <li>Traveling</li>
+        <li>Sports</li>
+      </ul>
+    </section>
+
+    <!-- Languages Known (Collapsible) -->
+    <section class="bio">
+      <button class="collapsible">Languages Known</button>
+      <div class="content">
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Kannada</li>
+          <li>Konkani</li>
+          <li>Tulu</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Connect with me - Text links -->
+    <section class="bio">
+      <h2>Connect with me</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/ganabhomkar-star" target="_blank">https://github.com/ganabhomkar-star</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/khushi-g-b-8a49b532b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">https://www.linkedin.com/in/khushi-g-b-8a49b532b</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/khushi.bhomkar/?igsh=MTkwY2lnOXZvaWg0Mw%3D%3D" target="_blank">https://www.instagram.com/khushi.bhomkar</a></li>
+      </ul>
+    </section>
+
+    <!-- Fun Stats -->
+    <section class="bio">
+      <h2>Fun Stats</h2>
+      <ul>
+        <li>Languages Known: 4</li>
+        <li>Hobbies: 4</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Khushi Bhomkar</p>
+  </footer>
+
+  <script>
+    // Collapsible Languages section
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
